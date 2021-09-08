@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import DisplaySelectedBreed from './DisplaySelectedBreed';
 
 const useBreeds = () => {
   const [breeds, setBreeds] = useState([]);
@@ -15,17 +16,27 @@ const useBreeds = () => {
 
 function SelectABreed() {
   const [breeds] = useBreeds();
+  const [selectedBreedId, setSelectedBreedId] = useState("abys");
 
+  const selectedBreed = async(breedId) => {
+    await setSelectedBreedId(breedId);
+    return selectedBreedId;
+  };
+
+   
   return (
     <div>
-       <select data-testid="breed selection">
+
+       <select data-testid="breed selection" onChange={event => selectedBreed(event.target[event.target.selectedIndex].id)}>
         <option default value="Select A Breed"> Select A Breed </option>
         {breeds.map(breed => {
           return(
-            <option  key={breed.name} value={breed.name}> {breed.name} </option>
+            <option  key={breed.id} id={breed.id} value={breed.name} > {breed.name}  </option>
           )
         })}
       </select>
+
+      <DisplaySelectedBreed selectedBreed={ selectedBreedId } />
     </div>
   )
 }

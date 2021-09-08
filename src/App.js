@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import AllBreeds from './components/AllBreeds';
+import SelectABreed from './components/SelectABreed';
 
 function App() {
   return (
     <div className="Catopedia">
-      <AllBreeds />
+      <SelectABreed />
     </div>
   );
 }
