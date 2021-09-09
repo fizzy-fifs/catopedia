@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SelectABreed from './components/SelectABreed';
+import SelectABreed from './components/SelectABreed/SelectABreed';
 
 function App() {
   return (

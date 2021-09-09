@@ -1,8 +1,8 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
-import DisplaySelectedBreed from "./components/DisplaySelectedBreed";
-import SelectABreed from "./components/SelectABreed";
+import DisplaySelectedBreed from "./components/DisplaySelectedBreed/DisplaySelectedBreed";
+import SelectABreed from "./components/SelectABreed/SelectABreed";
 
 // fetch all cat breeds from api, test react app displays all cat breeds in a drop down list
 
@@ -43,5 +43,3 @@ it("should render breed info", async() => {
   
   
 })
-
-//css 
