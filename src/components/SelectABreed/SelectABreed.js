@@ -31,36 +31,33 @@ function SelectABreed() {
   return (
     <div>
 
-       {/* <select data-testid="breed selection" > */}
+       {/* Displays breeds at the top of the page */}
       <div id="breeds">
 
         {breeds.map(breed => {
 
         const Content = styled.div`
         border: none;
-        
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         `;
 
         const renderBreedImage = (image) => {
-          if (image === undefined || image.id === undefined ) {
-            return unavailableImage
-          } else {
-            return image.url
-          }
+          return (image === undefined || image.id === undefined ) ? unavailableImage : image.url
         }
 
-          return(
-            <Content key={breed.id} 
-            id={breed.id} 
-            onClick={event => selectedBreed(event.currentTarget.id)} 
-            style={{backgroundImage: `url('${renderBreedImage(breed.image)}')`}}
-            className="eachBreed" > 
-              <h1 >{breed.name}</h1> 
-            </Content>
-          )
+        return(
+          <Content key={breed.id} 
+          id={breed.id} 
+          onClick={event => selectedBreed(event.currentTarget.id)} 
+          style={{ cursor: 'pointer', backgroundImage: `url('${renderBreedImage(breed.image)}')`}}
+          className="eachBreed" > 
+            
+            <h1 >{breed.name}</h1> 
+          
+          </Content>
+        )
         })}
 
       </div>
