@@ -11,8 +11,6 @@ it("should display a drop down list of cat breeds", async() => {
   render(<SelectABreed />);
 
   await waitFor(() => {
-    expect(screen.getByText("Select A Breed")).toBeInTheDocument();
-    
     let breeds = screen.getByTestId("breed selection");
     userEvent.selectOptions(breeds, "Aegean")
     
@@ -27,10 +25,8 @@ it("should display a drop down list of cat breeds", async() => {
 it("should render breed info", async() => {
   render(<SelectABreed />);
 
-  expect(screen.getByText("Select A Breed")).toBeInTheDocument();
-
   await waitFor(() => {
-    let breeds = screen.getByTestId("breed selection");
+    let breeds = screen.getAllByTestId("breed selection");
     userEvent.selectOptions(breeds, "Somali")
 
     expect(screen.getAllByText("Somali")).toBeInTheDocument;
