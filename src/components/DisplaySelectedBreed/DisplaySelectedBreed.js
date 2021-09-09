@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SelectABreed from '../SelectABreed/SelectABreed';
-import './DisplaySelectedBreed.css'
-import unavailableImage from '../../imgs/unavailable-image.jpeg'
+import './DisplaySelectedBreed.css';
+import unavailableImage from '../../imgs/unavailable-image.jpeg';
+
+
 
 const useAllBreeds = () => {
   const [allBreeds, setAllBreeds] = useState([]);
@@ -34,7 +36,7 @@ function DisplaySelectedBreed(props) {
         return(
 
           <div id="displayedBreed" key={filteredBreed.id}> 
-            <h1> {filteredBreed.name} </h1> 
+            <header> <h1>  <i className="fas fa-heading"> {filteredBreed.name}  </i> </h1>  </header>
             <img src={renderBreedImage(filteredBreed.image)} alt={filteredBreed.name} className="displayedBreedImage"/>
             <h3> Description </h3> {filteredBreed.description} 
             <h4> Origin: {filteredBreed.origin} </h4>
@@ -53,7 +55,7 @@ function DisplaySelectedBreed(props) {
               Vocalisation:      {filteredBreed.vocalisation}
             </p>
               
-            <a href={filteredBreed.wikipedia_url}> Learn More </a>
+            <a href={filteredBreed.wikipedia_url} style={{ alignItems: 'center' }}> Learn More </a>
           </div>
         )
 

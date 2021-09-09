@@ -58,7 +58,7 @@ function SelectABreed() {
             onClick={event => selectedBreed(event.currentTarget.id)} 
             style={{backgroundImage: `url('${renderBreedImage(breed.image)}')`}}
             className="eachBreed" > 
-              <h1 style={{whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}}>{breed.name}</h1> 
+              <h1 >{breed.name}</h1> 
             </Content>
           )
         })}
