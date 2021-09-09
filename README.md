@@ -18,7 +18,7 @@ Catopedia is a simple wiki application that provides users with detailed informa
 
   As a cat lover
   So that I can learn even more about my favourite breed
-  I would like to directed to a credible external source with more  information on a selected breed
+  I would like to be directed to a credible external source with more  information on a selected breed
 
 ```
 
