@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Catopedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Catopedia is a simple wiki application that provides users with detailed information on sixty-seven different cat breeds. Built as a single page application, catopedia is the result of a tech test and was designed based on the following specifications:
+  * Sign up and create an API key at https://thecatapi.com/
+  * Create an app that retrieves some data from one of the cat API endpoints (of your choice) and renders it on a web page. (Be creative!) 
 
-## Available Scripts
+## Tech/framework used
+### Built with
 
-In the project directory, you can run:
+  * React.Js 17.0.2
 
-### `yarn start`
+### Testing Framework
+  * React Testing Library 11.1.0
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
+Catopedia is a web application designed to run on a web browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run:
+  * simply visit: https://catopedia.herokuapp.com in a browser of your choice.
 
-### `yarn test`
+Alternatively, catopedia can be installed on a local machine and run via local host.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install clone the repo, 'cd' into the application directory and run "npm start".
 
-### `yarn build`
+```
+$ git clone https://github.com/fizzy-fifs/catopedia.git
+$ cd catopedia
+$ npm start
+```
+ 
+Users can interact with the application by scrolling through cat breeds at the top of the page. Clicking on a breed will dynamically render the breed information at the centre of the page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running tests
+To test, copy and paste the file path of the 'SpecRunner.html' file located in the root directory of this repo into the url bar of a browser of your choice.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###### *© Fifolu Akinyemi*
